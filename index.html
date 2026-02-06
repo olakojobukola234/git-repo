@@ -38,7 +38,7 @@
 
         .premium-card {
             background: var(--card-bg);
-            border-radius: 2.5rem; /* Large rounded corners from ref image */
+            border-radius: 2.5rem;
             box-shadow: 0 4px 24px rgba(0, 0, 0, 0.02);
             transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             border: 1px solid rgba(0,0,0,0.03);
@@ -86,10 +86,6 @@
             background: #f8f8f8;
         }
 
-        .header-gradient {
-            background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,0) 100%);
-        }
-
         /* Custom Icon Styling */
         .icon-box {
             width: 48px;
@@ -120,7 +116,7 @@
         <div class="text-sm font-bold tracking-tighter">OLAKOJO.DEV</div>
         <div class="flex gap-4">
             <a href="mailto:olakojobukola@gmail.com" class="btn-outline text-xs px-4 py-2">Copy Email</a>
-            <a href="https://flowcv.com/resume/rs06j3ft4o30" class="btn-black text-xs px-4 py-2">Download CV</a>
+            <a href="https://flowcv.com/resume/rs06j3ft4o30" target="_blank" class="btn-black text-xs px-4 py-2">Download CV</a>
         </div>
     </nav>
 
@@ -135,13 +131,13 @@
                 </div>
             </div>
             <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 text-[#111]">
-                Building digital products, <br> solutions, and experience.
+                High-performance landing <br> pages that convert.
             </h1>
             <p class="text-gray-500 max-w-xl mx-auto text-lg mb-8">
-                Full Stack Developer specialized in PHP/Laravel and WordPress ecosystem. Eager to create impactful digital tools.
+                Web Developer building digital experiences with React.js, Laravel, and Webflow. Specialized in creating conversion-optimized funnels and pages.
             </p>
             <div class="flex justify-center gap-3">
-                <a href="#projects" class="btn-black flex items-center gap-2">Latest Projects <i class="ri-arrow-down-line"></i></a>
+                <a href="#projects" class="btn-black flex items-center gap-2">View Projects <i class="ri-arrow-down-line"></i></a>
             </div>
         </header>
 
@@ -150,48 +146,86 @@
             
             <!-- Hero Stats / Bio -->
             <div class="md:col-span-8 premium-card p-10 flex flex-col justify-center">
-                <h3 class="text-2xl font-bold mb-4">Motivated Web Developer</h3>
+                <h3 class="text-2xl font-bold mb-4">Digital Solutions & Growth</h3>
                 <p class="text-gray-500 leading-relaxed text-lg mb-6">
-                    Dedicated to writing clean, scalable code and improving digital experiences. Proficient in HTML, CSS, JavaScript, and backend development with PHP/Laravel.
+                    I deliver bespoke landing pages using a blend of custom code (React/Laravel) and advanced platforms like Webflow and GoHighLevel. My focus is always on the end-goal: turning your traffic into measurable revenue.
                 </p>
                 <div class="flex flex-wrap gap-3">
-                    <span class="tag">08/2025 - Present @ Xpertech Solutions</span>
-                    <span class="tag">B.Sc Computer Science</span>
-                    <span class="tag">Fast Learner</span>
+                    <span class="tag">Full Stack Capability</span>
+                    <span class="tag">React & Webflow</span>
+                    <span class="tag">Conversion Focused</span>
                 </div>
             </div>
 
-            <!-- Interests Box (Inspired by Sunil's Resume) -->
+            <!-- Interests Box -->
             <div class="md:col-span-4 premium-card p-10 flex flex-col justify-center">
-                <h4 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">Interests</h4>
+                <h4 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">Focus Areas</h4>
                 <div class="space-y-4">
                     <div class="flex items-center gap-3 font-medium">
-                        <i class="ri-gamepad-line text-xl"></i> Gaming
+                        <i class="ri-code-s-slash-line text-xl text-blue-500"></i> Custom Dev
                     </div>
                     <div class="flex items-center gap-3 font-medium">
-                        <i class="ri-movie-2-line text-xl"></i> Problem Solving
+                        <i class="ri-cursor-line text-xl text-emerald-500"></i> No-Code/Low-Code
                     </div>
                     <div class="flex items-center gap-3 font-medium">
-                        <i class="ri-plane-line text-xl"></i> Continuous Learning
+                        <i class="ri-funnel-line text-xl text-orange-500"></i> Funnel Strategy
                     </div>
                 </div>
             </div>
 
             <!-- Live Projects Section -->
             <div id="projects" class="md:col-span-12 py-6">
-                <h2 class="text-2xl font-bold mb-8 text-center">Collaborate with brands to create impactful results.</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <h2 class="text-2xl font-bold mb-8 text-center">Projects that bridge design and performance.</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     
+                    <!-- Clooza -->
+                    <a href="https://clooza.com" target="_blank" class="premium-card p-8 group">
+                        <div class="icon-box group-hover:bg-blue-100 transition-colors">
+                            <i class="ri-ticket-2-line text-blue-600 text-xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Clooza</h4>
+                        <p class="text-gray-500 text-sm mb-4">A high-conversion landing page for a ticket management system, built to optimize user acquisition.</p>
+                        <span class="tag bg-blue-50 text-blue-600 border-blue-100">React Landing Page</span>
+                    </a>
+
+                    <!-- Datacoupon -->
+                    <a href="https://datacoupon.ng" target="_blank" class="premium-card p-8 group">
+                        <div class="icon-box group-hover:bg-orange-100 transition-colors">
+                            <i class="ri-shield-flash-line text-orange-600 text-xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Datacoupon</h4>
+                        <p class="text-gray-500 text-sm mb-4">Performance-driven conversion page for utility services and data management.</p>
+                        <span class="tag bg-orange-50 text-orange-600 border-orange-100">Conversion Focused</span>
+                    </a>
+
                     <!-- SMK Solar -->
                     <a href="https://smksolar.com.ng/" target="_blank" class="premium-card p-8 group">
                         <div class="icon-box group-hover:bg-yellow-100 transition-colors">
                             <i class="ri-sun-line text-yellow-600 text-xl"></i>
                         </div>
                         <h4 class="font-bold text-lg mb-2">SMK Solar</h4>
-                        <p class="text-gray-500 text-sm mb-4">WordPress + WooCommerce e-commerce for renewable energy.</p>
-                        <span class="text-xs font-bold uppercase tracking-tighter text-gray-400 flex items-center gap-1">
-                            Visit Site <i class="ri-arrow-right-up-line"></i>
-                        </span>
+                        <p class="text-gray-500 text-sm mb-4">E-commerce landing page designed to streamline renewable energy product purchases.</p>
+                        <span class="tag">WooCommerce</span>
+                    </a>
+
+                    <!-- Mayor's Schools -->
+                    <a href="http://mayorsschools.com/" target="_blank" class="premium-card p-8 group">
+                        <div class="icon-box group-hover:bg-indigo-100 transition-colors">
+                            <i class="ri-graduation-cap-line text-indigo-600 text-xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Mayor's Schools</h4>
+                        <p class="text-gray-500 text-sm mb-4">Official school website presenting academic structures and campus insights.</p>
+                        <span class="tag">Institutional</span>
+                    </a>
+
+                    <!-- Fajiri -->
+                    <a href="https://fajiri.com/" target="_blank" class="premium-card p-8 group">
+                        <div class="icon-box group-hover:bg-green-100 transition-colors">
+                            <i class="ri-layout-grid-line text-green-600 text-xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Fajiri</h4>
+                        <p class="text-gray-500 text-sm mb-4">Brand catalog and display platform for luxury retail brands and sub-groups.</p>
+                        <span class="tag">Brand Display</span>
                     </a>
 
                     <!-- TET Consult -->
@@ -200,34 +234,8 @@
                             <i class="ri-briefcase-line text-purple-600 text-xl"></i>
                         </div>
                         <h4 class="font-bold text-lg mb-2">TET Consult</h4>
-                        <p class="text-gray-500 text-sm mb-4">Corporate consultancy platform built with WordPress CMS.</p>
-                        <span class="text-xs font-bold uppercase tracking-tighter text-gray-400 flex items-center gap-1">
-                            Visit Site <i class="ri-arrow-right-up-line"></i>
-                        </span>
-                    </a>
-
-                    <!-- Mayor's Schools -->
-                    <a href="http://mayorsschools.com/" target="_blank" class="premium-card p-8 group">
-                        <div class="icon-box group-hover:bg-blue-100 transition-colors">
-                            <i class="ri-graduation-cap-line text-blue-600 text-xl"></i>
-                        </div>
-                        <h4 class="font-bold text-lg mb-2">Mayor's Schools</h4>
-                        <p class="text-gray-500 text-sm mb-4">Educational management system for student records.</p>
-                        <span class="text-xs font-bold uppercase tracking-tighter text-gray-400 flex items-center gap-1">
-                            Visit Site <i class="ri-arrow-right-up-line"></i>
-                        </span>
-                    </a>
-
-                    <!-- Fajiri -->
-                    <a href="https://fajiri.com/" target="_blank" class="premium-card p-8 group">
-                        <div class="icon-box group-hover:bg-green-100 transition-colors">
-                            <i class="ri-shopping-bag-line text-green-600 text-xl"></i>
-                        </div>
-                        <h4 class="font-bold text-lg mb-2">Fajiri</h4>
-                        <p class="text-gray-500 text-sm mb-4">Premium e-commerce retail experience for luxury goods.</p>
-                        <span class="text-xs font-bold uppercase tracking-tighter text-gray-400 flex items-center gap-1">
-                            Visit Site <i class="ri-arrow-right-up-line"></i>
-                        </span>
+                        <p class="text-gray-500 text-sm mb-4">Service-oriented landing page for professional business consultancy.</p>
+                        <span class="tag">Business Landing</span>
                     </a>
 
                 </div>
@@ -239,21 +247,21 @@
                 
                 <div class="space-y-8">
                     <div>
-                        <p class="text-xs font-bold mb-3 text-gray-400 uppercase">Core Languages</p>
+                        <p class="text-xs font-bold mb-3 text-gray-400 uppercase">Core Development</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="tag">HTML5</span> <span class="tag">CSS3</span> <span class="tag">JavaScript</span> <span class="tag">PHP</span>
+                            <span class="tag">React.js</span> <span class="tag">PHP / Laravel</span> <span class="tag">JavaScript</span> <span class="tag">WordPress</span>
                         </div>
                     </div>
                     <div>
-                        <p class="text-xs font-bold mb-3 text-gray-400 uppercase">Frameworks & CMS</p>
+                        <p class="text-xs font-bold mb-3 text-gray-400 uppercase">No-Code & CRM</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="tag">Laravel</span> <span class="tag">React.js</span> <span class="tag">Tailwind</span> <span class="tag">WordPress</span>
+                            <span class="tag">Webflow</span> <span class="tag">GoHighLevel</span> <span class="tag">Tailwind CSS</span>
                         </div>
                     </div>
                     <div>
-                        <p class="text-xs font-bold mb-3 text-gray-400 uppercase">Databases</p>
+                        <p class="text-xs font-bold mb-3 text-gray-400 uppercase">Infrastructure</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="tag">MySQL</span> <span class="tag">MongoDB</span>
+                            <span class="tag">MySQL</span> <span class="tag">Git / GitHub</span> <span class="tag">REST APIs</span>
                         </div>
                     </div>
                 </div>
@@ -297,7 +305,7 @@
                         <i class="ri-mail-line text-2xl"></i>
                     </div>
                 </div>
-                <h2 class="text-3xl font-bold mb-4 text-[#111]">Tell me about your next project</h2>
+                <h2 class="text-3xl font-bold mb-4 text-[#111]">Looking for a high-performing landing page?</h2>
                 <div class="flex justify-center gap-4 mt-8">
                     <a href="mailto:olakojobukola@gmail.com" class="btn-black">Email Me</a>
                     <a href="https://wa.me/2347031676325" target="_blank" class="btn-outline">WhatsApp</a>
