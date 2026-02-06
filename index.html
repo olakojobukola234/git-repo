@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olakojo Oluwabukola | Web Developer Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #f3f3f3;
+            --card-bg: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --accent: #000000;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            overflow-x: hidden;
+        }
+        
+        .bento-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .premium-card {
+            background: var(--card-bg);
+            border-radius: 2.5rem; /* Large rounded corners from ref image */
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.02);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .premium-card:hover {
+            transform: scale(1.01);
+        }
+
+        .tag {
+            background: #f8f8f8;
+            border: 1px solid #eeeeee;
+            padding: 0.4rem 0.8rem;
+            border-radius: 99px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .btn-black {
+            background: #000000;
+            color: #ffffff;
+            border-radius: 99px;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-black:hover {
+            background: #333333;
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #dddddd;
+            color: var(--text-primary);
+            border-radius: 99px;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background: #f8f8f8;
+        }
+
+        .header-gradient {
+            background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,0) 100%);
+        }
+
+        /* Custom Icon Styling */
+        .icon-box {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1rem;
+            background: #f9f9f9;
+            margin-bottom: 1rem;
+        }
+
+        /* Animation for appearance */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade {
+            animation: fadeIn 0.8s ease forwards;
+        }
+    </style>
+</head>
+<body class="pb-20">
+
+    <!-- Top Navigation -->
+    <nav class="flex justify-between items-center px-10 py-8 max-w-7xl mx-auto">
+        <div class="text-sm font-bold tracking-tighter">OLAKOJO.DEV</div>
+        <div class="flex gap-4">
+            <a href="mailto:olakojobukola@gmail.com" class="btn-outline text-xs px-4 py-2">Copy Email</a>
+            <a href="https://flowcv.com/resume/rs06j3ft4o30" class="btn-black text-xs px-4 py-2">Download CV</a>
+        </div>
+    </nav>
+
+    <div class="bento-container space-y-6">
+        
+        <!-- Header Section -->
+        <header class="text-center py-12 animate-fade">
+            <div class="mb-6 flex justify-center">
+                <div class="relative">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Olakojo&backgroundColor=f3f3f3" alt="Avatar" class="w-24 h-24 rounded-full border-4 border-white shadow-lg">
+                    <div class="absolute -bottom-1 -right-1 bg-white px-2 py-0.5 rounded-full shadow text-[10px] font-bold">Lagos 🇳🇬</div>
+                </div>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 text-[#111]">
+                Building digital products, <br> solutions, and experience.
+            </h1>
+            <p class="text-gray-500 max-w-xl mx-auto text-lg mb-8">
+                Full Stack Developer specialized in PHP/Laravel and WordPress ecosystem. Eager to create impactful digital tools.
+            </p>
+            <div class="flex justify-center gap-3">
+                <a href="#projects" class="btn-black flex items-center gap-2">Latest Projects <i class="ri-arrow-down-line"></i></a>
+            </div>
+        </header>
+
+        <!-- Main Bento Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            
+            <!-- Hero Stats / Bio -->
+            <div class="md:col-span-8 premium-card p-10 flex flex-col justify-center">
+                <h3 class="text-2xl font-bold mb-4">Motivated Web Developer</h3>
+                <p class="text-gray-500 leading-relaxed text-lg mb-6">
+                    Dedicated to writing clean, scalable code and improving digital experiences. Proficient in HTML, CSS, JavaScript, and backend development with PHP/Laravel.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <span class="tag">08/2025 - Present @ Xpertech Solutions</span>
+                    <span class="tag">B.Sc Computer Science</span>
+                    <span class="tag">Fast Learner</span>
+                </div>
+            </div>
+
+            <!-- Interests Box (Inspired by Sunil's Resume) -->
+            <div class="md:col-span-4 premium-card p-10 flex flex-col justify-center">
+                <h4 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">Interests</h4>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3 font-medium">
+                        <i class="ri-gamepad-line text-xl"></i> Gaming
+                    </div>
+                    <div class="flex items-center gap-3 font-medium">
+                        <i class="ri-movie-2-line text-xl"></i> Problem Solving
+                    </div>
+                    <div class="flex items-center gap-3 font-medium">
+                        <i class="ri-plane-line text-xl"></i> Continuous Learning
+                    </div>
+                </div>
+            </div>
+
+            <!-- Live Projects Section -->
+            <div id="projects" class="md:col-span-12 py-6">
+                <h2 class="text-2xl font-bold mb-8 text-center">Collaborate with brands to create impactful results.</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- SMK Solar -->
+                    <a href="https://smksolar.com.ng/" target="_blank" class="premium-card p-8 group">
+                        <div class="icon-box group-hover:bg-yellow-100 transition-colors">
+                            <i class="ri-sun-line text-yellow-600 text-xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">SMK Solar</h4>
+                        <p class="text-gray-500 text-sm mb-4">WordPress + WooCommerce e-commerce for renewable energy.</p>
+                        <span class="text-xs font-bold uppercase tracking-tighter text-gray-400 flex items-center gap-1">
+                            Visit Site <i class="ri-arrow-right-up-line"></i>
+                        </span>
+                    </a>
+
+                    <!-- TET Consult -->
+                    <a href="https://tetconsultsite.xpertechsolutions.com/" target="_blank" class="premium-card p-8 group">
+                        <div class="icon-box group-hover:bg-purple-100 transition-colors">
+                            <i class="ri-briefcase-line text-purple-600 text-xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">TET Consult</h4>
+                        <p class="text-gray-500 text-sm mb-4">Corporate consultancy platform built with WordPress CMS.</p>
+                        <span class="text-xs font-bold uppercase tracking-tighter text-gray-400 flex items-center gap-1">
+                            Visit Site <i class="ri-arrow-right-up-line"></i>
+                        </span>
+                    </a>
+
+                    <!-- Mayor's Schools -->
+                    <a href="http://mayorsschools.com/" target="_blank" class="premium-card p-8 group">
+                        <div class="icon-box group-hover:bg-blue-100 transition-colors">
+                            <i class="ri-graduation-cap-line text-blue-600 text-xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Mayor's Schools</h4>
+                        <p class="text-gray-500 text-sm mb-4">Educational management system for student records.</p>
+                        <span class="text-xs font-bold uppercase tracking-tighter text-gray-400 flex items-center gap-1">
+                            Visit Site <i class="ri-arrow-right-up-line"></i>
+                        </span>
+                    </a>
+
+                    <!-- Fajiri -->
+                    <a href="https://fajiri.com/" target="_blank" class="premium-card p-8 group">
+                        <div class="icon-box group-hover:bg-green-100 transition-colors">
+                            <i class="ri-shopping-bag-line text-green-600 text-xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Fajiri</h4>
+                        <p class="text-gray-500 text-sm mb-4">Premium e-commerce retail experience for luxury goods.</p>
+                        <span class="text-xs font-bold uppercase tracking-tighter text-gray-400 flex items-center gap-1">
+                            Visit Site <i class="ri-arrow-right-up-line"></i>
+                        </span>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Skills & Tools -->
+            <div class="md:col-span-5 premium-card p-10">
+                <h4 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-8">Technical Stack</h4>
+                
+                <div class="space-y-8">
+                    <div>
+                        <p class="text-xs font-bold mb-3 text-gray-400 uppercase">Core Languages</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag">HTML5</span> <span class="tag">CSS3</span> <span class="tag">JavaScript</span> <span class="tag">PHP</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold mb-3 text-gray-400 uppercase">Frameworks & CMS</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag">Laravel</span> <span class="tag">React.js</span> <span class="tag">Tailwind</span> <span class="tag">WordPress</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold mb-3 text-gray-400 uppercase">Databases</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tag">MySQL</span> <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Experience & Education -->
+            <div class="md:col-span-7 premium-card p-10">
+                <h4 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-8">Background</h4>
+                
+                <div class="space-y-8">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h5 class="font-bold text-lg">Web Developer</h5>
+                            <p class="text-sm text-gray-500">Xpertech Solutions • Larry Computer Academy</p>
+                        </div>
+                        <span class="tag bg-black text-white">Present</span>
+                    </div>
+
+                    <div class="border-t border-gray-100 pt-8 flex justify-between items-start">
+                        <div>
+                            <h5 class="font-bold text-lg">B.Sc Computer Science</h5>
+                            <p class="text-sm text-gray-500">Crawford University</p>
+                        </div>
+                        <span class="tag">2021 - 2025</span>
+                    </div>
+
+                    <div class="border-t border-gray-100 pt-8 flex justify-between items-start">
+                        <div>
+                            <h5 class="font-bold text-lg">Diploma Full Stack Dev</h5>
+                            <p class="text-sm text-gray-500">Larry Computer Academy</p>
+                        </div>
+                        <span class="tag">2025</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Contact Section -->
+            <div class="md:col-span-12 premium-card p-16 text-center bg-[#fdfdfd]">
+                <div class="mb-6 flex justify-center">
+                    <div class="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center border border-gray-100">
+                        <i class="ri-mail-line text-2xl"></i>
+                    </div>
+                </div>
+                <h2 class="text-3xl font-bold mb-4 text-[#111]">Tell me about your next project</h2>
+                <div class="flex justify-center gap-4 mt-8">
+                    <a href="mailto:olakojobukola@gmail.com" class="btn-black">Email Me</a>
+                    <a href="https://wa.me/2347031676325" target="_blank" class="btn-outline">WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="pt-12 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+            <p>© 2026 Olakojo Oluwabukola. All rights reserved.</p>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-black transition-colors">LinkedIn</a>
+                <a href="#" class="hover:text-black transition-colors">GitHub</a>
+                <a href="#" class="hover:text-black transition-colors">Dribbble</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
